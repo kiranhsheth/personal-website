@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Kiran Sheth" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Kiran Sheth">Kiran Sheth</h1>
+
+          <p class="title">Quantitative Storyteller, Problem Solver</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+
+
+              <a href="mailto:kiranhsheth@gmail.com" class="contact-title contact-link">Email</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+
+
+              <a href="http://www.linkedin.com/in/kiran-sheth-2aa35a21b" class="contact-title contact-link"
+                target="_blank">LinkedIn</a>
+            </div>
+
+          </li>
+
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <a href="https://github.com/kiranhsheth" class="contact-title contact-link" target="_blank">GitHub
+
+              </a>
+            </div>
+
+          </li>
+
+        </ul>
+
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hi! I’m Kiran—a Northwestern student studying economics, journalism and data science with a deep interest in
+            using data, storytelling, and strategy to tackle complex, real-world challenges.
+          </p>
+
+          <p>
+            At Northwestern, the blend of economics, journalism, and data science shaped how I think—deeply analytical,
+            yet attuned to nuance and human stories. I’ve led a nonprofit consulting organization supporting grassroots
+            changemakers, and I’ve explored financial storytelling from both sides of the table—whether decoding M&A
+            deal structures or crafting clear narratives for investors. As I look ahead, I’m excited to keep working at
+            the intersection of data, strategy, and sustainability—where big ideas meet real-world execution.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">How I Create Value</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <!-- Bar Chart Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" stroke="#FACC15"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="20" x2="12" y2="10"></line>
+                  <line x1="18" y1="20" x2="18" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="16"></line>
+                </svg>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Analyzing Markets</h4>
+                <p class="service-item-text">
+                  Breaking down industries and companies to uncover trends, risks, and opportunities.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <!-- Network Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" stroke="#FACC15"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <circle cx="4" cy="4" r="2"></circle>
+                  <circle cx="20" cy="4" r="2"></circle>
+                  <circle cx="20" cy="20" r="2"></circle>
+                  <circle cx="4" cy="20" r="2"></circle>
+                  <line x1="12" y1="9" x2="12" y2="3"></line>
+                  <line x1="15" y1="12" x2="21" y2="12"></line>
+                  <line x1="12" y1="15" x2="12" y2="21"></line>
+                  <line x1="9" y1="12" x2="3" y2="12"></line>
+                </svg>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Connecting Dots</h4>
+                <p class="service-item-text">
+                  Linking insights across finance, tech, and sustainability to shape smarter strategies.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <!-- Settings (Gears) Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" stroke="#FACC15"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path
+                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z">
+                  </path>
+                </svg>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Building Systems</h4>
+                <p class="service-item-text">
+                  Designing processes and tools that scale — from databases to training programs.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <!-- Users Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" stroke="#FACC15"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Leading People</h4>
+                <p class="service-item-text">
+                  Guiding teams and organizations with clarity, structure, and long-term vision.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+          <p class="resume-link-text">
+            You can also find my resume <a
+              href="https://drive.google.com/file/d/17PMqYNBcBKRjtUGjUOG8T9ludo2LLPtr/view?usp=sharing" target="_blank"
+              rel="noopener noreferrer" class="underline-link"
+              style="display: inline; text-decoration: underline;">here</a>
+          </p>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Northwestern University</h4>
+
+              <span>2021 — 2026</span>
+
+              <p class="timeline-text">
+                B.S. in Journalism | B.A. in Economics | Data Science Minor | Dean's List
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Horace Greeley High School</h4>
+
+              <span>2016 — 2020</span>
+
+              <p class="timeline-text">
+                Greeley Tribune Editor-in-Chief | Debate Team
+              </p>
+
+            </li>
+
+
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">U.S. Bank</h4>
+              <h5 style="font-style: italic; color: white; font-weight: normal;">Analyst, Loan Capital Markets</h5>
+
+              <span>June 2024 — June 2025</span>
+
+              <p class="timeline-text">
+                At U.S. Bank, I led the transformation of a critical syndicated loan database, managing a global team
+                and building scalable tools that increased processing speed by 75% and cut data errors by 90%. I
+                supported $7.6B in lead-left ABL deals by developing lender materials and capital structure analyses,
+                and delivered M&A modeling and financing strategies for a $4.8B digital infrastructure acquisition. I
+                also coordinated cross-business due diligence for a prospective LBO in the energy sector.
+
+
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Contrary</h4>
+              <h5 style="font-style: italic; color: white; font-weight: normal;">Senior Research Fellow</h5>
+
+
+              <span>September 2024 — Present</span>
+
+              <p class="timeline-text">
+                At Contrary, I conducted deep technical and market analysis to produce investment-grade research on
+                frontier technology companies. I reverse-engineered product architectures, parsed patents and academic
+                papers, and interviewed technical experts to assess the defensibility and scalability of companies in
+                AI, cybersecurity, and data infrastructure. My work involved building competitive landscapes from first
+                principles, benchmarking models and APIs, and translating technical differentiation into strategic
+                insight. These memos now serve as internal tools for sourcing, diligence, and conviction-building across
+                Contrary’s investment team.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">ING Capital, LLC</h4>
+              <h5 style="font-style: italic; color: white; font-weight: normal;">Summer Analyst, Asset & Portfolio
+                Management</h5>
+
+              <span>June 2023 — August 2023</span>
+
+              <p class="timeline-text">
+                As a Summer Analyst at ING Capital, I led annual leveraged loan reviews across a $3.0B portfolio,
+                aligning internal credit risk assessments with Moody’s and S&P frameworks to safeguard portfolio quality
+                across 160+ issuers. I authored over 10 quarterly performance reports by analyzing borrower financials,
+                debt structures, and sector trends—identifying early risk signals and supporting proactive portfolio
+                decisions. My role required synthesizing insights across credit risk, sector coverage, and capital
+                markets teams, deepening my understanding of credit dynamics across a broad set of industries.
+
+
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <!-- FILTER BUTTONS -->
+          <ul class="filter-list">
+            <li class="filter-item"><button class="active" data-filter-btn>Research</button></li>
+            <li class="filter-item"><button data-filter-btn>Writing</button></li>
+            <li class="filter-item"><button data-filter-btn>Data Science</button></li>
+            <li class="filter-item"><button data-filter-btn>Podcast</button></li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item"><button data-select-item>Research</button></li>
+              <li class="select-item"><button data-select-item>Writing</button></li>
+              <li class="select-item"><button data-select-item>Data Science</button></li>
+              <li class="select-item"><button data-select-item>Podcast</button></li>
+            </ul>
+          </div>
+
+          <!-- PROJECTS -->
+          <ul class="project-list">
+
+            <!-- Research Projects -->
+            <li class="project-item active" data-filter-item data-category="research">
+              <a href="https://research.contrary.com/company/vise" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/vise.png" alt="Vise" loading="lazy">
+                </figure>
+                <h3 class="project-title">Vise: AI-Driven Asset Management</h3>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="research">
+              <a href="https://research.contrary.com/company/elevenlabs" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/elevenlabs.png" alt="ElevenLabs" loading="lazy">
+                </figure>
+                <h3 class="project-title">ElevenLabs: AI Voice Synthesis</h3>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="research">
+              <a href="https://research.contrary.com/company/cyera" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/cyera.png" alt="Cyera" loading="lazy">
+                </figure>
+                <h3 class="project-title">Cyera: Cloud Data Security</h3>
+
+              </a>
+            </li>
+
+            <!-- Writing Projects -->
+            <li class="project-item" data-filter-item data-category="writing">
+              <a href="https://medium.com/the-northwestern-business-review/investing-in-tomorrow-how-blended-finance-can-shape-sustainable-infrastructure-1a7a59172fa9"
+                target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/blendedfinance.png" alt="Blended Finance Article" loading="lazy">
+                </figure>
+                <h3 class="project-title">Investing in Tomorrow: Blended Finance</h3>
+
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="writing">
+              <a href="https://medium.com/the-northwestern-business-review/discovery-warnermedia-merger-is-positioned-to-shake-up-the-media-sphere-14ac74033221"
+                target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/warnermedia.png" alt="Discovery WarnerMedia Merger Article" loading="lazy">
+                </figure>
+                <h3 class="project-title">Discovery WarnerMedia Merger Analysis</h3>
+
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="writing">
+              <a href="https://www.theinsidepress.com/emotional-and-heartfelt-an-interfaith-vigil-in-new-castle-advocates-for-racial-equality/"
+                target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/vigil.png" alt="Interfaith Vigil Article" loading="lazy">
+                </figure>
+                <h3 class="project-title">Emotional and Heartfelt: An Interfaith Vigil in New Castle Advocates for
+                  Racial Equality</h3>
+
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="writing">
+              <a href="https://www.theinsidepress.com/what-local-businesses-are-planning-as-the-curve-flattens-and-restrictions-ease/"
+                target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/businesses.png" alt="COVID Businesses Article" loading="lazy">
+                </figure>
+                <h3 class="project-title">What Local Businesses are Planning as the Curve Flattens and Restrictions Ease
+                </h3>
+
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="writing">
+              <a href="https://www.theinsidepress.com/in-new-castle-a-virtual-ceremony-captures-the-spirit-of-gratitude/"
+                target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/memorial.png" alt="Virtual Ceremony Article" loading="lazy">
+                </figure>
+                <h3 class="project-title">In New Castle: A Virtual Ceremony Captures the Spirit of Gratitude & American
+                  Resilience</h3>
+
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="writing">
+              <a href="https://www.theinsidepress.com/addressing-concerns-about-gun-safety-during-the-pandemic/"
+                target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/gunsafety.png" alt="Gun Safety Article" loading="lazy">
+                </figure>
+                <h3 class="project-title">Addressing Concerns About Gun Safety during the Pandemic</h3>
+
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="writing">
+              <a href="https://www.theinsidepress.com/new-castle-volunteer-match-reaching-out-to-those-impacted-by-covid-19/"
+                target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/volunteer.png" alt="Volunteer Match Article" loading="lazy">
+                </figure>
+                <h3 class="project-title">New Castle Volunteer Match: Reaching Out to Those Impacted by COVID-19</h3>
+
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="writing">
+              <a href="https://www.theinsidepress.com/local-high-school-and-middle-school-students-respond-to-the-impact-of-a-pandemic/"
+                target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/covid.png" alt="School Response to COVID Article" loading="lazy">
+                </figure>
+                <h3 class="project-title">Local High School and Middle School Students Respond to the Impact of a
+                  Pandemic</h3>
+
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="writing">
+              <a href="https://www.theinsidepress.com/town-board-inauguration-welcomes-incumbents-newcomers/"
+                target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/board.png" alt="Town Board Article" loading="lazy">
+                </figure>
+                <h3 class="project-title">Town Board Inauguration Welcomes Incumbents & Newcomers</h3>
+
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="writing">
+              <a href="https://www.theinsidepress.com/north-castle-considers-plastic-bag-ban/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/bag.png" alt="Discovery WarnerMedia Merger Article" loading="lazy">
+                </figure>
+                <h3 class="project-title">North Castle Considers Plastic Bag Ban</h3>
+
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="writing">
+              <a href="https://www.theinsidepress.com/new-castle-town-board-pushes-for-action-on-gun-violence-prevention/"
+                target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/gunviolence.png" alt="Gun Violence Article" loading="lazy">
+                </figure>
+                <h3 class="project-title">New Castle Town Board Pushes for Action on Gun Violence Prevention</h3>
+
+              </a>
+            </li>
+
+            <!-- Data Science Projects -->
+            <li class="project-item" data-filter-item data-category="data science">
+              <a href="https://kiranhsheth.github.io/CPS/CPS.html" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/cps.png" alt="CPS Inequality Case Study" loading="lazy">
+                </figure>
+                <h3 class="project-title">Socioeconomic Academic Performance Analysis</h3>
+                <p class="project-category">Mapped CPS by neighborhood and analyzed test scores, graduation rates, and
+                  student demographics to to see how various socioecobomic factors affects their academic success</p>
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="data science">
+              <a href="https://kiranhsheth.github.io/final-data-vis/final-data-vis" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/redlining.png" alt="Educational Redlining" loading="lazy">
+                </figure>
+                <h3 class="project-title">Longitudinal Educational Disparity Case Study</h3>
+                <p class="project-category">Conducted comparative statistical analysis using box plots and longitudinal
+                  data from 2011-2019 to quantify how historical redlining practices continue affecting Chicago schools'
+                  performance relative to state averages, guiding resource allocation decisions</p>
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="data science">
+              <a href="https://kiranhsheth.github.io/MLB/MLB" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/mlb.png" alt="MLB Prediction Model" loading="lazy">
+                </figure>
+                <h3 class="project-title">MLB Prediction Model</h3>
+                <p class="project-category">Engineered features from Statcast data and built a multiple linear
+                  regression model with interaction terms to predict player home run totals, enabling teams and fantasy
+                  managers to make data-driven roster decisions</p>
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="data science">
+              <a href="https://kiranhsheth.github.io/education/education" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/dropout.png" alt="Machine Learning Classification System" loading="lazy">
+                </figure>
+                <h3 class="project-title">Machine Learning Classification System</h3>
+                <p class="project-category">Applied ensemble machine learning methods with hyperparameter tuning on
+                  student demographic and academic data to predict dropout risk with low false positive rates, allowing
+                  universities to intervene early with at-risk students</p>
+              </a>
+            </li>
+
+            <!-- Podcast Projects -->
+            <li class="project-item" data-filter-item data-category="podcast">
+              <a href="https://lichenscitisci.org/ALL-THINGS-AIR" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/podcast.png" alt="Podcast" loading="lazy">
+                </figure>
+                <h3 class="project-title">USDA Podcast: All Things Air</h3>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+      </article>
+
+
+
+
+
+
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
